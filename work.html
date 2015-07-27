@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<title>妈妈联盟前端技术规范</title>
+	<link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+<!--导航栏-->
+<header>
+	<div class="header">
+		<nav role="nav">
+			<a href="index.html">首页</a>
+			<a href="work.html">工作规程</a>
+			<a href="basic.html">Basic规范</a>
+			<a href="web.html">Web构建规范</a>
+			<a href="mobile.html">Mobile构建规范</a>
+			<a href="module.html">模块&组件库</a>
+			<a href="tool.html">前端辅助工具</a>
+			<a href="team.html">团队协作</a>
+			<a href="about.html">关于我们</a>
+		</nav>
+		<h1><a href="javascript:;">mi妈妈联盟</a></h1>
+	</div>
+</header>
+<!--信息区-->
+<section>
+	<div class="banner">
+		<header>
+			<hgroup class="subTit">
+				<h2>工作规程</h2>
+				<h3>前端页面构建前期准备、中期过程、后期产出要达到的要求、遵守的规定、标准和制度。</h3>
+			</hgroup>
+		</header>
+	</div>
+</section>
+<!--内容区-->
+<section>
+	<div class="content d-box">
+		<aside>
+			<nav id="sideNav" class="navMenu">
+				<li class="current"><a href="#base_01">页面构建准备</a></li>
+				<li><a href="#base_02">页面构建过程</a></li>
+				<li><a href="#base_03">页面构建产出</a></li>
+			</nav>
+		</aside>
+		<article class="b-flex">
+			<ul>
+				<li id="base_01">
+					<div class="mainInfo ml_20">
+						<h4>页面构建准备</h4>
+						<h5>了解产品和设计</h5>
+						<ul class="listOl">
+							<li>
+								参加需求、交互、视觉会议，了解产品需求背景和项目成员。
+							</li>
+							<li>
+								了解产品使用场景和用户群体。
+							</li>
+							<li>
+								了解产品对兼容性的要求以及面向的设备和平台等。
+							</li>
+							<li>
+								了解产品要使用的技术（Web、WebApp、WeChat App、Hybrid App、Native APP等技术）。
+							</li>
+						</ul>
+						<h5>提出疑问和见解</h5>
+						<ul class="listOl">
+							<li>
+								在交互或视觉会议中结合技术要求，提出疑问和见解。
+							</li>
+							<li>
+								提出可能存在的问题（技术实现问题、性能问题等），协商解决方案（如优雅退化）并达成共识。
+							</li>
+							<li>
+								提出已有新技术可能在产品中的应用场景，协助产品创新。
+							</li>
+						</ul>
+						<h5>预算人力和时间</h5>
+						<ul class="listOl">
+							<li>
+								根据项目时间要求及工作量，预算人力和时间。
+							</li>
+							<li>
+								预算开发周期和阶段性产出。
+							</li>
+						</ul>
+					</div>	
+				</li>
+				<li id="base_02">
+					<div class="mainInfo ml_20 mt_20">
+						<h4>页面构建过程</h4>
+						<h5>职责任务</h5>
+						<ul class="listOl">
+							<li>
+								确定一个前端工程师负责人，他将负责对整个页面开发工作做统筹规划、分配协调等管理工作和主开发职责。
+							</li>
+							<li>
+								确认交互原型或视觉效果已经定稿，再开始开发工作。
+							</li>
+							<li>
+								如果采取并行模式（视觉设计和页面开发同时进行），则以交互原型定稿为准（当视觉效果定稿后，前端重构师再补充细节），开始分配。
+							</li>
+							<li>
+								按页面类型分配，同一类型页面分配给同一个人。
+							</li>
+							<li>
+								每个人都要了解页面公共元素（多个页面中相同或相似部分），一个公共元素只分配到一个人，每人完成自身页面的同时完成“提取剥离”，你可能需要了解“分类方法规范”</a>。
+							</li>
+							<li>
+								由于图片无法使用SVN合并和解决冲突，切图需要统筹分配。
+							</li>
+							<li>
+								在项目管理平台中创建细分的开发任务，填写任务详情和时间，如果任务间存在关系，则设置好关联或从属关系。
+							</li>
+						</ul>
+						<h5>页面开发</h5>
+						<ul class="listOl">
+							<li>
+								创建前端目录，包含“页面开发”目录（如:js、css、html、img）及“提取剥离”目录（如：demo）。
+							</li>
+							<li>
+								使用框架创建前端文件，如：css/*.css、html/*.html、demo/grid.html、demo/module.html、demo/unit.html。
+							</li>
+							<li>
+								使用代码库，高效开发页面。
+							</li>
+							<li>
+								和交互、视觉及其他前端工程师保持良好的沟通。
+							</li>
+							<li>
+								及时反馈问题和建议：对效果疑问的确认、对状态缺失的补充、对优雅退化的建议、对行为结构的说明等等。
+							</li>
+							<li>
+								如果采取并行模式（页面开发和JS开发同时进行），则以交互原型定稿为准，JS开发工程师可并行开发业务逻辑层，当页面开发完成后再嵌入UI层。
+							</li>
+						</ul>
+						<h5>提取剥离</h5>
+						<ul class="listOl">
+							<li>
+								页面开发的同时提取重置（global.css）、模块（module.css）、主体私用样式（main.css）合并成mi.min.css,link添加至对应的HTML文件。
+							</li>
+							<li>
+								避免重复劳动，对页面元素一目了然，在增加元素时首先来此目录查找是否已经实现或有相似实现而只需扩展。
+							</li>
+							<li>
+								“提取剥离”目录中的HTML文件和“页面开发”目录中的HTML文件需保持同步维护。
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li id="base_03">
+					<div class="mainInfo ml_20 mt_20">
+						<h4>页面构建产出</h4>
+						<h5>自测联调</h5>
+						<ul class="listOl">
+							<li>
+								SVN更新、合并、解决冲突、提交。
+							</li>
+							<li>
+								对自己的代码进行全面的多设备测试和兼容性测试。
+							</li>
+							<li>
+								如果自测过程中发现别人写的代码有问题，及时反馈。
+							</li>
+						</ul>
+						<h5>提交验收</h5>
+						<ul class="listOl">
+							<li>
+								当有阶段性产出后，前端重构师将页面提交给UI设计师，进行效果验收。
+							</li>
+							<li>
+								效果验收将主要检查视觉效果符合度（尺寸、位置、颜色、切图等）。
+							</li>
+							<li>
+								如有必要，可以同时提交给前端组成员，进行代码验收。
+							</li>
+							<li>
+								代码验收将主要检查兼容性、HTML规范和CSS规范。
+							</li>
+						</ul>
+						<h5>交接说明</h5>
+						<ul class="listOl">
+							<li>
+								当完成验收后，通知并交给后续的前端JS工程师，进行模板层开发和行为逻辑开发，前端重构师需要交代可能需要他们注意的地方或者对代码的解释说明。
+							</li>
+							<li>
+								如果你的工作需要与别人交接，也需要交代清楚整体架构部署和代码解释。
+							</li>
+						</ul>
+						<h5>总结分享</h5>
+						<ul class="listOl">
+							<li>
+								分享内容可以包含：架构思想、协作心得、使用体会、设备特性介绍、新技术应用、调研展示、遇到的问题和解决方案等。
+							</li>
+							<li>
+								分享对象不限于：交互、视觉、前端及所有感兴趣的人。
+							</li>
+							<li>
+								你可以把总结中的技术demo提交给组长，我们会发布到代码库，以帮助你积累这些技术并分享给别人。
+							</li>
+						</ul>
+						<h5>变更维护</h5>
+						<ul class="listOl">
+							<li>
+								如果未经过需求变更和设计变更，原则上不允许直接进行开发变更。
+							</li>
+							<li>
+								变更前应了解变更原因，变更后应该及时通知后续前端JS工程师。
+							</li>
+							<li>
+								如果静态资源的版本号不是自动完成更新，你可能需要手动更新版本号。
+							</li>
+							<li>
+								变更和维护使用本规范中所有流程，即你可能需要重复之前部分流程。
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>	
+		</article>
+	</div>
+</section>
+<!--页脚区-->
+<footer>
+	<div id="copyrightId" class="copyright">
+		<p class="ta_c">本规范由深圳市辉煌十月科技有限公司-前端技术组于2015年07月01日编写整理制作 ,如有任何意见或建议，欢迎反馈radompang@octech.cn</p>
+	</div>
+</footer>
+<!--脚本区-->
+<script src="script/global.js"></script>
+</body>
+</html>

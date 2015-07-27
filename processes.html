@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<title>妈妈联盟前端技术规范</title>
+	<link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+<!--导航栏-->
+<header>
+	<div class="header">
+		<nav role="nav">
+			<a href="index.html">首页</a>
+			<a href="basic.html">工作规程</a>
+			<a href="basic.html">web构建规范</a>
+			<a href="basic.html">webapp构建规范</a>
+			<a href="package.html">代码库</a>
+			<a href="tool.html">前端辅助工具</a>
+			<a href="teamwork.html">团队协作</a>
+			<a href="about.html">关于我们</a>
+		</nav>
+		<h1><a href="javascript:;">mi妈妈联盟</a></h1>
+	</div>
+</header>
+<!--信息区-->
+<section>
+	<div class="banner">
+		<header>
+			<hgroup class="subTit">
+				<h2>精品题库</h2>
+				<h3>精选企业前端开发笔试题，工作之余，也可观注行业职位动态，分析并练习，提升自我。</h3>
+			</hgroup>
+		</header>
+	</div>
+</section>
+<!--内容区-->
+<section>
+	<div class="content d-box">
+		<aside>
+			<nav id="sideNav" class="navMenu">
+				<li class="current"><a href="#base_01">web标准</a></li>
+				<li><a href="#base_02">HTML & CSS</a></li>
+				<li><a href="#base_03">JavaScript</a></li>
+				<li><a href="#base_03">Other</a></li>
+			</nav>
+		</aside>
+		<article class="b-flex">
+			<ul class="mainInfo ml_20">
+				<li id="base_01">
+					<h4>规范目的</h4>
+					<div class="mainInfo_mes">
+						<p class="mainInfo_mes_txtInfo">规范并不是一种限制，而是约定，强调团队的一致性；加强团队之间的合作，提高协作效率；形成一种团队文化；最终是为项目服务的，我们所做的一切都是为了优化项目和流程，提高我们的工作效率。不规矩、不成方圆，为提高团队协作效率，便于研发人员添加功能及前端后期优化维护，输出高质量的文档，特制订此文档。本规范文档一经确认，前端开发人员必须按本文档规范进行前台页面开发. 本文档如有不对或者不合适的地方请及时提出，经讨论决定后方可更改。</p>
+					<div>
+				</li>
+				<li id="base_02">
+					<h4>命名约定</h4>
+					<div class="mainInfo_mes">
+						<p class="mainInfo_mes_txtInfo">在任何一个项目或者系统开发之前都需要定制一个开发约定和规则，这样有利于项目的整体风格统一、代码维护和扩展。由于Web项目开发的分散性、独立性、整合的交互性等，所以定制一套完整的约定和规则显得尤为重要。<a href="javascript:;">常用CSS命名</a></p>
+						<ol class="listOl mt_10">
+							<li class="mt_10">
+								<strong>驼峰命名：</strong>表示单词间区分，例：<br />
+								<code>&lt;nav class="navMenu">&lt;/nav></code>
+							</li>
+							<li class="mt_10">
+								<strong>下划线命名：</strong>表示从属上下级关系，例：<br />
+								<code>&lt;aside class="aside"><br />&lt;ul class="aside_list">...&lt;/ul><br />&lt;/aside></code>
+							</li>
+							<li class="mt_10">
+								<strong>中划线命名：</strong>表示同级关系或用于图标，例：<br />
+								<code>&lt;i class="i-help">&lt;/i></code>
+							</li>
+						</ol>
+					</div>
+				</li>
+				<li id="base_03">
+					<h4>文件规范</h4>
+					<div class="mainInfo_mes">
+						<p class="mainInfo_mes_txtInfo">在任何一个项目或者系统开发之前都需要定制一个开发约定和规则，这样有利于项目的整体风格统一、代码维护和扩展。由于Web项目开发的分散性、独立性、整合的交互性等，所以定制一套完整的约定和规则显得尤为重要。<a href="javascript:;">常用CSS命名</a></p>
+						<ol class="listOl mt_10">
+							<li class="mt_10">
+								<strong>驼峰命名：</strong>表示单词间区分，例：<br />
+								<code>&lt;nav class="navMenu">&lt;/nav></code>
+							</li>
+							<li class="mt_10">
+								<strong>下划线命名：</strong>表示从属上下级关系，例：<br />
+								<code>&lt;aside class="aside"><br />&lt;ul class="aside_list">...&lt;/ul><br />&lt;/aside></code>
+							</li>
+							<li class="mt_10">
+								<strong>中划线命名：</strong>表示同级关系或用于图标，例：<br />
+								<code>&lt;i class="i-help">&lt;/i></code>
+							</li>
+						</ol>
+					</div>
+				</li>
+				<li id="base_04">
+					<h4>HTML规范</h4>
+					<div class="mainInfo_mes">
+						<p class="mainInfo_mes_txtInfo">在任何一个项目或者系统开发之前都需要定制一个开发约定和规则，这样有利于项目的整体风格统一、代码维护和扩展。由于Web项目开发的分散性、独立性、整合的交互性等，所以定制一套完整的约定和规则显得尤为重要。<a href="javascript:;">常用CSS命名</a></p>
+						<ol class="listOl mt_10">
+							<li class="mt_10">
+								<strong>驼峰命名：</strong>表示单词间区分，例：<br />
+								<code>&lt;nav class="navMenu">&lt;/nav></code>
+							</li>
+							<li class="mt_10">
+								<strong>下划线命名：</strong>表示从属上下级关系，例：<br />
+								<code>&lt;aside class="aside"><br />&lt;ul class="aside_list">...&lt;/ul><br />&lt;/aside></code>
+							</li>
+							<li class="mt_10">
+								<strong>中划线命名：</strong>表示同级关系或用于图标，例：<br />
+								<code>&lt;i class="i-help">&lt;/i></code>
+							</li>
+						</ol>
+					</div>
+				</li>
+				<li id="base_05">
+					<h4>CSS规范</h4>
+					<div class="mainInfo_mes">
+						<p class="mainInfo_mes_txtInfo">在任何一个项目或者系统开发之前都需要定制一个开发约定和规则，这样有利于项目的整体风格统一、代码维护和扩展。由于Web项目开发的分散性、独立性、整合的交互性等，所以定制一套完整的约定和规则显得尤为重要。<a href="javascript:;">常用CSS命名</a></p>
+						<ol class="listOl mt_10">
+							<li class="mt_10">
+								<strong>驼峰命名：</strong>表示单词间区分，例：<br />
+								<code>&lt;nav class="navMenu">&lt;/nav></code>
+							</li>
+							<li class="mt_10">
+								<strong>下划线命名：</strong>表示从属上下级关系，例：<br />
+								<code>&lt;aside class="aside"><br />&lt;ul class="aside_list">...&lt;/ul><br />&lt;/aside></code>
+							</li>
+							<li class="mt_10">
+								<strong>中划线命名：</strong>表示同级关系或用于图标，例：<br />
+								<code>&lt;i class="i-help">&lt;/i></code>
+							</li>
+						</ol>
+					</div>
+				</li>
+				<li id="base_06">
+					<h4>Javascript规范</h4>
+					<div class="mainInfo_mes">
+						<p class="mainInfo_mes_txtInfo">在任何一个项目或者系统开发之前都需要定制一个开发约定和规则，这样有利于项目的整体风格统一、代码维护和扩展。由于Web项目开发的分散性、独立性、整合的交互性等，所以定制一套完整的约定和规则显得尤为重要。<a href="javascript:;">常用CSS命名</a></p>
+						<ol class="listOl mt_10">
+							<li class="mt_10">
+								<strong>驼峰命名：</strong>表示单词间区分，例：<br />
+								<code>&lt;nav class="navMenu">&lt;/nav></code>
+							</li>
+							<li class="mt_10">
+								<strong>下划线命名：</strong>表示从属上下级关系，例：<br />
+								<code>&lt;aside class="aside"><br />&lt;ul class="aside_list">...&lt;/ul><br />&lt;/aside></code>
+							</li>
+							<li class="mt_10">
+								<strong>中划线命名：</strong>表示同级关系或用于图标，例：<br />
+								<code>&lt;i class="i-help">&lt;/i></code>
+							</li>
+						</ol>
+					</div>
+				</li>
+				<li id="base_07">
+					<h4>EDM规范</h4>
+					<div class="mainInfo_mes">
+						<p class="mainInfo_mes_txtInfo">在任何一个项目或者系统开发之前都需要定制一个开发约定和规则，这样有利于项目的整体风格统一、代码维护和扩展。由于Web项目开发的分散性、独立性、整合的交互性等，所以定制一套完整的约定和规则显得尤为重要。<a href="javascript:;">常用CSS命名</a></p>
+						<ol class="listOl mt_10">
+							<li class="mt_10">
+								<strong>驼峰命名：</strong>表示单词间区分，例：<br />
+								<code>&lt;nav class="navMenu">&lt;/nav></code>
+							</li>
+							<li class="mt_10">
+								<strong>下划线命名：</strong>表示从属上下级关系，例：<br />
+								<code>&lt;aside class="aside"><br />&lt;ul class="aside_list">...&lt;/ul><br />&lt;/aside></code>
+							</li>
+							<li class="mt_10">
+								<strong>中划线命名：</strong>表示同级关系或用于图标，例：<br />
+								<code>&lt;i class="i-help">&lt;/i></code>
+							</li>
+						</ol>
+					</div>
+				</li>
+				<li id="base_08">
+					<h4>图片规范</h4>
+					<div class="mainInfo_mes">
+						<p class="mainInfo_mes_txtInfo">在任何一个项目或者系统开发之前都需要定制一个开发约定和规则，这样有利于项目的整体风格统一、代码维护和扩展。由于Web项目开发的分散性、独立性、整合的交互性等，所以定制一套完整的约定和规则显得尤为重要。<a href="javascript:;">常用CSS命名</a></p>
+						<ol class="listOl mt_10">
+							<li class="mt_10">
+								<strong>驼峰命名：</strong>表示单词间区分，例：<br />
+								<xmp><code><nav class="navMenu"></nav></code></xmp>
+							</li>
+							<li class="mt_10">
+								<strong>下划线命名：</strong>表示从属上下级关系，例：<br />
+								<code>&lt;aside class="aside"><br />&lt;ul class="aside_list">...&lt;/ul><br />&lt;/aside></code>
+							</li>
+							<li class="mt_10">
+								<strong>中划线命名：</strong>表示同级关系或用于图标，例：<br />
+								<code>&lt;i class="i-help">&lt;/i></code>
+							</li>
+						</ol>
+					</div>
+				</li>
+				<li id="base_09">
+					<h4>工作流程</h4>
+					<div class="mainInfo_mes">
+						<ol class="listOl mt_10">
+							<li class="mt_10">
+								阅读需求文档、查看原型交互稿
+							</li>
+							<li class="mt_10">
+								根据UI视觉稿向产品经理给出排期
+							</li>
+							<li class="mt_10">
+								分析UI视觉稿 构思最优解决方案
+							</li>
+							<li class="mt_10">
+								切图、模块化拼装雪碧图css sprite、选择图标格式、无损压缩、编写图标样式
+							</li>
+							<li class="mt_10">
+								编写页面HTML\CSS\javascript
+							</li>
+							<li class="mt_10">
+								检查修复浏览器兼容性、设计稿还原度
+							</li>
+							<li class="mt_10">
+								提交代码、邮件通知 对应的研发、产品、室经理等相关人员
+							</li>
+							<li class="mt_10">
+								支撑研发完成开发工作
+							</li>
+							<li class="mt_10">
+								参与版本基线测式、配合研发修复基线BUG
+							</li>
+							<li class="mt_10">
+								正式上线后全面体验确保无误
+							</li>
+						</ol>
+					</div>
+				</li>
+			</ul>	
+		</article>
+	</div>
+</section>
+<!--页脚区-->
+<footer>
+	<div id="copyrightId" class="copyright">
+		<p class="ta_c">本规范由深圳市辉煌十月科技有限公司-前端技术组于2015年07月01日编写整理制作 ,如有任何意见或建议，欢迎反馈radompang@octech.cn</p>
+	</div>
+</footer>
+<!--脚本区-->
+<script src="script/global.js"></script>
+</body>
+</html>

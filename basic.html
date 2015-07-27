@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<title>妈妈联盟前端技术规范</title>
+	<link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+<!--导航栏-->
+<header>
+	<div class="header">
+		<nav role="nav">
+			<a href="index.html">首页</a>
+			<a href="work.html">工作规程</a>
+			<a href="basic.html">Basic规范</a>
+			<a href="web.html">Web构建规范</a>
+			<a href="mobile.html">Mobile构建规范</a>
+			<a href="module.html">模块&组件库</a>
+			<a href="tool.html">前端辅助工具</a>
+			<a href="team.html">团队协作</a>
+			<a href="about.html">关于我们</a>
+		</nav>
+		<h1><a href="javascript:;">mi妈妈联盟</a></h1>
+	</div>
+</header>
+<!--信息区-->
+<section>
+	<div class="banner">
+		<header>
+			<hgroup class="subTit">
+				<h2>Basic规范</h2>
+				<h3>编码之前，团队成员HTML&CSS&JavaScript使用、命名等相关约定。</h3>
+			</hgroup>
+		</header>
+	</div>
+</section>
+<!--内容区-->
+<section>
+	<div class="content d-box">
+		<aside>
+			<nav id="sideNav" class="navMenu">
+				<li class="current"><a href="#base_01">CSS Frame</a></li>
+				<li><a href="#base_02">模块组织</a></li>
+				<li><a href="#base_03">目录组织</a></li>
+				<li><a href="#base_04">内容组织</a></li>
+			</nav>
+		</aside>
+		<article class="b-flex">
+			<ul class="mainInfo ml_20">
+				<li id="base_01">
+					<h4>CSS Frame</h4>
+					<h5>妈妈联盟Web版页面</h5>
+					<p>适用于PC端等页面。</p>
+					<div class="codeBox mt_10 mb_10">
+						<ol>
+							<li><code>@charset "utf-8";</code></li>
+							<li><code>/*========================================</code></li>
+							<li><code>Version：2.0 Date：2015/06/18</code></li>
+							<li><code>Compatible Kernel：Trident、WebKit、Blink、Gecko</code></li>
+							<li><code>Author：mamalianmeng</code></li>
+							<li><code>========================================*/</code></li>
+							<li><code>html,body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,iframe,fieldset,legend,input,select,textarea,button,th,td,blockquote,address,pre{margin:0;padding:0;}</code></li>
+							<li><code>html,body{font:12px/1.5 "Microsoft YaHei",Verdana,"Simsun";background-color:white;}</code></li>
+							<li><code>h1,h2,h3,h4,h5,h6,input,textarea,select,button,label{font-size:100%;}</code></li>
+							<li><code>button,select,textarea,input{vertical-align:middle;}</code></li>
+							<li><code>input,button{cursor:pointer;overflow:visible;width:auto;}</code></li>
+							<li><code>textarea{resize:vertical;}</code></li>
+							<li><code>a,a:hover{text-decoration:none;}</code></li>
+							<li><code>ul,ol{list-style:none outside none;}</code></li>
+							<li><code>img,fieldset{border:0;}</code></li>
+							<li><code>div,p,li,pre{word-wrap:break-word;}</code></li>
+							<li><code>address,cite,code,em,var,abbr,acronym,dfn{font-style:normal}</code></li>
+							<li><code>i{display:inline-block;}</code></li>
+							<li><code>img{vertical-align:top;}</code></li>
+							<li><code>table{border-collapse:collapse;border-spacing:0;}</code></li>
+							<li><code>/*========== 通用类 ==========*/</code></li>
+							<li><code>/* 字号 */</code></li>
+							<li><code>fz-12{font-size:12px;}</code></li>
+							<li><code>fz-14{font-size:14px;}</code></li>
+							<li><code>fz-16{font-size:16px;}</code></li>
+							<li><code>fz-18{font-size:18px;}</code></li>
+							<li><code>/* 文本对齐 */</code></li>
+							<li><code>.ta-l{text-align:left!important;}</code></li>
+							<li><code>.ta-r{text-align:right!important;}</code></li>
+							<li><code>.ta-c{text-align:center!important;}</code></li>
+							<li><code>/* 外间隙 */</code></li>
+							<li><code>.mt-5{margin-top:5px;}.mr-5{margin-right:5px;}.mb-5{margin-bottom:5px;}.ml-5{margin-left:5px;}</code></li>
+							<li><code>.mt-10{margin-top:10px;}.mr-10{margin-right:10px;}.mb-10{margin-bottom:10px;}.ml-10{margin-left:10px;}</code></li>
+							<li><code>.mt-20{margin-top:20px;}.mr-20{margin-right:20px;}.mb-20{margin-bottom:20px;}.ml-20{margin-left:20px;}</code></li>
+							<li><code>/* 内间隙 */</code></li>
+							<li><code>.pt-5{padding-top:5px;}.pr-5{padding-right:5px;}.pb-5{padding-bottom:5px;}.pl-5{padding-left:5px;}</code></li>
+							<li><code>.pt-10{padding-top:10px;}.pr-10{padding-right:10px;}.pb-10{padding-bottom:10px;}.pl-10{padding-left:10px;}</code></li>
+							<li><code>.pt-20{padding-top:20px;}.pr-20{padding-right:20px;}.pb-20{padding-bottom:20px;}.pl-20{padding-left:20px;}</code></li>
+							<li><code>/* 显示隐藏 */</code></li>
+							<li><code>.show{display:block!important;}</code></li>
+							<li><code>.hide{display:none!important;}</code></li>
+							<li><code>/* 符动布局 */</code></li>
+							<li><code>.fl{float:left;display:inline;}</code></li>
+							<li><code>.fr{float:right;display:inline;}</code></li>
+							<li><code>/* 清除闭合符动 */</code></li>
+							<li><code>.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}</code></li>
+							<li><code>.clearfix{zoom:1;}</code></li>
+							<li><code>.clearAll{overflow:hidden;_zoom:1;}</code></li>
+						</ol>
+						<span class="exampleLabel">Example</span>
+					</div>
+					<h5>妈妈联盟WeChat App页面</h5>
+					<p>适用于WebApp、WeChat App、Hybrid App等H5移动端页面。</p>
+					<div class="codeBox mt_10 mb_10">
+						<ol>
+							<li><code>@charset "utf-8";</code></li>
+							<li><code>/*========================================</code></li>
+							<li><code>Version：1.0 Date：2015/06/18</code></li>
+							<li><code>Compatible Kernel：WebKit、Blink、WeChat App</code></li>
+							<li><code>Author：mamalianmeng</code></li>
+							<li><code>========================================*/</code></li>
+							<li><code>html,body,h1,h2,h3,h4,h5,h6,p,br,form,input,button,textarea,select,fieldset,legend,blockquote,ul,ol,li,dl,dt,dd,pre,table,caption,tr,td,th,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;font:14px "Helvetica";}</code></li>
+							<li><code>html,body{height:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%;}</code></li>
+							<li><code>h1,h2,h3,h4,h5,h6{font-weight:normal;}</code></li>
+							<li><code>button,select,textarea,input{vertical-align:middle;}</code></li>
+							<li><code>a{text-decoration:none;}</code></li>
+							<li><code>ul,ol{list-style:none outside none;}</code></li>
+							<li><code>img,fieldset{border:0;}</code></li>
+							<li><code>address,cite,code,em,var,abbr,acronym,dfn{font-style:normal}</code></li>
+							<li><code>i{display:inline-block;}</code></li>
+							<li><code>img{vertical-align:top;}</code></li>
+							<li><code>mark{background:#ff0;}</code></li>
+							<li><code>div,p,li,pre{word-wrap:break-word;}</code></li>
+							<li><code>input[type=text],input[type=password],input[type=email],input[type=search],input[type=submit],button,textarea{border:none;background:none;padding:4px;-webkit-appearance:none;appearance:none;}</code></li>
+							<li><code>table{border-collapse:collapse;border-spacing:0;}</code></li>
+							<li><code>/* 禁止长按出现系统默认弹框菜单 */</code></li>
+							<li><code>a,button,input,img {-webkit-touch-callout: none;touch-callout: none;}</code></li>
+							<li><code>article,aside,section,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,summary,audio,video{display:block;}</code></li>
+							<li><code>/*========== 通用类 ==========*/</code></li>
+							<li><code>/* 弹性伸缩布局 */</code></li>
+							<li><code>/* 字号 */</code></li>
+							<li><code>fz-12{font-size:12px;}</code></li>
+							<li><code>fz-14{font-size:14px;}</code></li>
+							<li><code>fz-16{font-size:16px;}</code></li>
+							<li><code>fz-18{font-size:18px;}</code></li>
+							<li><code>/* 文本对齐 */</code></li>
+							<li><code>.ta-l{text-align:left!important;}</code></li>
+							<li><code>.ta-r{text-align:right!important;}</code></li>
+							<li><code>.ta-c{text-align:center!important;}</code></li>
+							<li><code>/* 外间隙 */</code></li>
+							<li><code>.mt-5{margin-top:5px;}.mr-5{margin-right:5px;}.mb-5{margin-bottom:5px;}.ml-5{margin-left:5px;}</code></li>
+							<li><code>.mt-10{margin-top:10px;}.mr-10{margin-right:10px;}.mb-10{margin-bottom:10px;}.ml-10{margin-left:10px;}</code></li>
+							<li><code>.mt-20{margin-top:20px;}.mr-20{margin-right:20px;}.mb-20{margin-bottom:20px;}.ml-20{margin-left:20px;}</code></li>
+							<li><code>/* 内间隙 */</code></li>
+							<li><code>.pt-5{padding-top:5px;}.pr-5{padding-right:5px;}.pb-5{padding-bottom:5px;}.pl-5{padding-left:5px;}</code></li>
+							<li><code>.pt-10{padding-top:10px;}.pr-10{padding-right:10px;}.pb-10{padding-bottom:10px;}.pl-10{padding-left:10px;}</code></li>
+							<li><code>.pt-20{padding-top:20px;}.pr-20{padding-right:20px;}.pb-20{padding-bottom:20px;}.pl-20{padding-left:20px;}</code></li>
+							<li><code>/* 显示隐藏 */</code></li>
+							<li><code>.show{display:block!important;}</code></li>
+							<li><code>.hide{display:none!important;}</code></li>
+							<li><code>/* 弹性伸缩布局 */</code></li>
+							<li><code>.flex{display:-webkit-box;display:-webkit-flex;display:flex;}</code></li>
+							<li><code>.flex-1{-webkit-box-flex:1;-webkit-flex:1;flex:1;}</code></li>
+							<li><code>/* 与flex一起让元素水平居中 */</code></li>
+							<li><code>.column-center{-webkit-box-align: center;box-align: center;-webkit-align-items: center;align-items: center;}</code></li>
+							<li><code>/* 与flex一起让元素水平垂直居中 */</code></li>
+							<li><code>.item-center{-webkit-box-pack: center;box-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;box-align: center;-webkit-align-items: center;align-items: center;}</code></li>
+							<li><code>/* 遮罩层及子元素水平垂直居中 */</code></li>
+							<li><code>.mask{display:-webkit-box;-webkit-box-orient:horizontal;box-orient:horizontal;-webkit-box-pack:center;box-pack:center;-webkit-box-lign:center;box-align:center;width: 100%;height: 100%;background: rgba(0,0,0,0.4);position:absolute;left:0;top:0;z-index:1003;}</code></li>
+							<li><code>/* 截取省略 */</code></li>
+  							<li><code>.ellipsis{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}</code></li>
+  							<li><code>/* IE怪癖模盒渲染 */</code></li>
+  							<li><code>.box-size{-webkit-box-sizing:border-box;box-sizing:border-box;}</code></li>
+						</ol>
+						<span class="exampleLabel">Example</span>
+					</div>
+				</li>
+			</ul>	
+		</article>
+	</div>
+</section>
+<!--页脚区-->
+<footer>
+	<div id="copyrightId" class="copyright">
+		<p class="ta_c">本规范由深圳市辉煌十月科技有限公司-前端技术组于2015年07月01日编写整理制作 ,如有任何意见或建议，欢迎反馈radompang@octech.cn</p>
+	</div>
+</footer>
+<!--脚本区-->
+<script src="script/global.js"></script>
+</body>
+</html>
