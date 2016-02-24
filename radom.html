@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>REM适配移屏分辨率</title>
+	<link rel="stylesheet" href="">
+    <style>
+    html,body,h1,p{margin:0;padding:0;}
+    h1{font-size:.9rem;padding:.5rem;}
+    p{padding:0 .5rem;font-size:.6rem;line-height:.9rem;}
+    </style>
+</head>
+<body>
+    <h1>REM 计算公式：实际字号像素或尺寸像素/HTML根标莶字号像素</h1>
+    <p>rem 是相对于 html 元素的 font-size 的一个单位。如果 html 上定义了 font-size: 20px;则无论在任何地方都是 1rem = 20px 这个大小不会受到父元素的影响。换言之,若整站需要适应页面大小的任何元素都使用 rem 为单位来定义,当设备屏幕变大或者缩小时,我们只需要改变html元素的font-size,那么整站使用了rem单位的元素都会相应的等比放大或者缩小,并且布局不会乱</p>
+    <p>10px = 1rem 在根元素（font-size = 10px的时候）；</p>
+    <p>20px = 1rem 在根元素（font-size = 20px的时候）；</p>
+    <p>40px = 1rem 在根元素（font-size = 40px的时候）；</p>
+	<!--REM 缩放-->
+	<script>
+	(function (doc, win) {
+		var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+		}
+		if (!doc.addEventListener) return;
+		win.addEventListener(resizeEvt, recalc, false);
+		doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+	</script>	
+</body>
+</html>
