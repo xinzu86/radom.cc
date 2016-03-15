@@ -1,0 +1,15 @@
+article ~ article { border-top: 1px dashed #cccccc; }
+article > section { background: #eeeeee; }
+article dl > dt { color: #333333; }
+article dl > dd { color: #555555; }
+nav + article { margin-top: 0; }
+
+#content article h1 { color: #333333; }
+#content article p { margin-bottom: 1.4em; }
+#content aside { background-color: #eeeeee; }
+
+article ~ article { border-top: 1px dashed #cccccc; }
+article > section { background: #eeeeee; }
+article dl > dt { color: #333333; }
+article dl > dd { color: #555555; }
+nav + article { margin-top: 0; }
